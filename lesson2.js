@@ -13,70 +13,64 @@ var x = 1 + (f *= 2);
 console.log(x);             // x=5
 
 //Третье задание
-var g = -5, h = -10, i;
 
-if (g >= 0 && h >= 0) {
-    i = g - h;
-    console.log(i);
-} else if (g < 0 && h < 0) {
-    i = g * h;
-    console.log(i);
-} else {
-    i = g + h;
-    console.log(i);
+/**
+ * Функция (+ - *) в зависимости от введённых данных
+ * @param {number} g Первое число
+ * @param {number} h Второе число
+ * @returns {number} Результат
+ */
+function calculation(g, h) {
+    if (g >= 0 && h >= 0) {
+        return  g - h;
+    } else if (g < 0 && h < 0) {
+        return g * h;
+    } else {
+        return  g + h;
+    }
 }
+
+alert(calculation(5, 10));
+alert(calculation(-5, -10));
+alert(calculation(5, -10));
+alert(calculation(0, 0));
 
 //Четвёртое задание
 var k = 6;
 
 switch (k) {
     case 0:
-        alert('0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('0');
     case 1:
-        alert('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('1');
     case 2:
-        alert('2 3 4 5 6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('2');
     case 3:
-        alert('3 4 5 6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('3');
     case 4:
-        alert('4 5 6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('4');
     case 5:
-        alert('5 6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('5');
     case 6:
-        alert('6 7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('6');
     case 7:
-        alert('7 8 9 10 11 12 13 14 15');
-        break;
+        console.log('7');
     case 8:
-        alert('8 9 10 11 12 13 14 15');
-        break;
+        console.log('8');
     case 9:
-        alert('9 10 11 12 13 14 15');
-        break;
+        console.log('9');
     case 10:
-        alert('10 11 12 13 14 15');
-        break;
+        console.log('10');
     case 11:
-        alert('11 12 13 14 15');
-        break;
+        console.log('11');
     case 12:
-        alert('12 13 14 15');
-        break;
+        console.log('12');
     case 13:
-        alert('13 14 15');
-        break;
+        console.log('13');
     case 14:
-        alert('14 15');
-        break;
+        console.log('14');
     default:
-        alert('15');
+        console.log('15');
 }
 
 //Пятое задание
@@ -151,19 +145,15 @@ function mathOperation(arg1, arg2, operation) {
     switch (operation) {
         case 'сумма':
             result = addition(arg1, arg2);
-            // alert(result);
             break;
         case 'разность':
             result = subtraction(arg1, arg2);
-            // alert(result);
             break;
         case 'произведение':
             result = multiplication(arg1, arg2);
-            // alert(result);
             break;
         case 'деление':
             result = division(arg1, arg2);
-            // alert(result);
             break;
         default:
             result = 'Не понятно';
@@ -171,8 +161,7 @@ function mathOperation(arg1, arg2, operation) {
     return result;
 }
 
-mathOperation(arg1, arg2, operation);
-alert(result);
+alert(mathOperation(arg1, arg2, operation));
 
 //Седьмое задание
 /*
@@ -181,17 +170,22 @@ null не равно 0, т.к. 0 это число в переменной. А n
 
 //Восьмое задание
 
-//Не успел, к сожалению
-
-
-/*var val;
-var pow;
-
+/**
+ * Функция возведения в степень
+ * @param {number} val Число
+ * @param {number} pow Степень
+ * @returns {number} Результат возведения в степень
+ */
 function power(val, pow) {
-    if (pow === 1) {
+    if (pow <= 0) {
         return 1;
     }
 
-    return val * power(pow-1)
+    if (pow === 1) {
+        return val;
+    }
+
+    return val * power(val, pow - 1);
 }
-*/
+
+console.log(power(10, 2));
