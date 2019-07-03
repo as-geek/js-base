@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>BRAND - интернет магазин</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> </head>
+
+<body>
+	<div class="wrapper">
+		<div class="top">
+			<header class="header">
+				<div class="container header-flex">
+					<div class="header__left">
+						<a class="logo" href="index.html"><img src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
+						<form class="header__form" action="#">
+							<div class="browse">
+								<p class="browse__p">Browse</p>
+								<div class="browse-drop">
+									<div class="browse-drop__flex">
+										<h3 class="browse-drop__h3">Women</h3>
+										<ul class="browse-drop__menu">
+											<li><a href="#" class="browse-drop__link">Dresses</a></li>
+											<li><a href="#" class="browse-drop__link">Tops</a></li>
+											<li><a href="#" class="browse-drop__link">Sweaters/Knits</a></li>
+											<li><a href="#" class="browse-drop__link">Jackets/Coats</a></li>
+											<li><a href="#" class="browse-drop__link">Blazers</a></li>
+											<li><a href="#" class="browse-drop__link">Denim</a></li>
+											<li><a href="#" class="browse-drop__link">Leggings/Pants</a></li>
+											<li><a href="#" class="browse-drop__link">Skirts/Shorts</a></li>
+											<li><a href="#" class="browse-drop__link">Accessories</a></li>
+										</ul>
+									</div>
+									<div class="browse-drop__flex">
+										<h3 class="browse-drop__h3">Men</h3>
+										<ul class="browse-drop__menu">
+											<li><a href="#" class="browse-drop__link">Tees/Tank tops</a></li>
+											<li><a href="#" class="browse-drop__link">Shirts/Polos</a></li>
+											<li><a href="#" class="browse-drop__link">Sweaters</a></li>
+											<li><a href="#" class="browse-drop__link">Sweatshirts/Hoodies</a></li>
+											<li><a href="#" class="browse-drop__link">Blazers</a></li>
+											<li><a href="#" class="browse-drop__link">Jackets/vests</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<input class="search" type="text" placeholder="Search for Item...">
+							<button class="button-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+					<div class="header__right">
+						<div class="cart">
+							<a href="shopping-cart.html"><img src="img/cart.svg" alt="cart" class="cart__img"></a>
+                            <div class="template-cart">
+									<div class="cart-drop__product">
+										<a href="#"><img class="cart-drop__img"></a>
+										<div class="cart-drop__text">
+											<div class="product__id"></div>
+											<a href="#">
+												<div class="product__name product__name_cart-drop"></div>
+											</a>
+											<div class="cart-drop__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+											<div class="cart-drop__sum">
+												<div class="product__quantity"></div>
+												<span>&nbsp;&nbsp;x&nbsp;&nbsp;₽&nbsp;</span>
+												<div class="product__sum"></div>
+												<div class="product__price product__price_cart-drop"></div>
+											</div>
+										</div>
+										<a href="#">
+											<div class="cart-drop__delete"><i class="fas fa-times-circle"></i></div>
+										</a>
+									</div>
+								</div>
+						</div> <a href="#" class="button">My Account</a>
+					</div>
+				</div>
+			</header>
+			<div class="catalog">
+				<div class="container catalog-flex">
+					<div class="catalog__block-right">
+						<div class="catalog__products">
+							<div class="template-product">
+								<div class="product">
+									<a href="#"><img class="product__img">
+										<div class="product__text">
+											<p class="product__id"></p>
+											<p class="product__name"></p>
+											<p class="product__p">₽ <span class="product__price"></span></p>
+										</div>
+									</a>
+									<a class="product__add" href="#">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="product.js"></script>
+</body>
+
+</html>
